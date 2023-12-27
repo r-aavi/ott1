@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        .container{
+            width:100%;
+            min-height: 100vh;
+            background:  #0c111b;;
+            
+        }
+        .container h2{
+            color:#fff;
+            font-size: 32px;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .price-row{
+            width:90%;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap:20px ;
+        }
+        .price-col{
+            background: #1f283b;
+            padding: 10% 15%;
+            border-radius: 10px;
+            color:#fff;
+            text-align: center;
+        }
+        .price-col p{
+            font-size: 22px;
+        }
+        .price-col h3{
+            font-size: 22px;
+            margin: 20px 0 40px;
+            font-weight: 500;
+        }
+        .price-col h3 span{
+            font-size: 16px;
+        }
+        .price-col ul{
+            text-align: left;
+            margin: 20px 0;
+            color:#ddd;
+            list-style: none;
+        }
+        .price-col ul li{
+            margin: 15px 0;
+        }
+        .price-col ul li::before{
+            content: '\2022';
+            color:#e33058;
+            font-weight: bold;
+            margin-right: 8px;
+
+        }
+        .price-col button{
+            width: 100%;
+            padding:14px  0;
+            background: transparent;
+            color:#fff;
+            font-size: 15px;
+            border: 1px solid #e33058;
+            border-radius: 6px;
+            margin-top: 30px;
+            cursor:pointer;
+            transition: background 0.5s;
+        }
+
+        .price-col button:hover{
+            background: #e33058;
+        }
+
+
+        .navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 70px;
+}
+
+.nav-links {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+ .nav-items a {
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+ }
+
+ .right-container {
+    display: block;
+    margin-left: auto;
+ }
+
+ .login-link {
+    width: 100px;
+    color:green;
+
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+ }
+ .login-link:hover{
+            background: #e33058;
+        }
+
+
+
+    </style>
+    <title>subscribe</title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <img src="https://www.informaticsinc.com/application/files/1115/7904/1150/Informatics-Blog-Images-OTT-900x350.jpg" class="brand-logo" alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="ott.html">Home</a></li>
+            <li class="nav-items"><a href="movies.html">movies</a></li>
+            <li class="nav-items"><a href="subscription.html">Premium</a></li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <a href="login.html"> <button class="login-link">Login</button><a>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <h2>Choose ur plan</h2>
+        <div class="price-row">
+            <div class="price-col">
+                <p>mobile</p>
+                <h3>1$<span>/month</span></h3>
+                <ul>
+                    <li>quality:Good</li>
+                    <li>resolution:480p</li>
+                    <li>devices:phone,tablet</li>
+                    
+                </ul>
+                <button>Get now</button>
+            </div>
+            <div class="price-col">
+                <p>mobile</p>
+                <h3>20$<span>/month</span></h3>
+                <ul>
+                    <li>quality:better</li>
+                    <li>resolution:1080p</li>
+                    <li>devices:phone,tablet</li>
+                    
+                </ul>
+                <button>Get now</button>
+        </div>
+        <div class="price-col">
+            <p>Standard</p>
+            <h3>30$<span>/month</span></h3>
+            <ul>
+                <li>quality:Best</li>
+                <li>resolution:4K+HD</li>
+                <li>devices:phone,tablet,tv</li>
+                
+            </ul>
+            <button>Get now</button>
+    </div>
+</body>
+</html>
